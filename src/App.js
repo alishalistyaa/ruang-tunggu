@@ -7,6 +7,8 @@ import Landingpage from './Landingpage';
 import LoginRegister from './LoginRegister';
 import Login from './Login';
 import Register from './Register';
+import DataPasien from './DataPasien';
+import DataAsuransi from './DataAsuransi';
 
 
 function App() {
@@ -29,6 +31,18 @@ function App() {
         </Route>
         <Route exact path="/register">
           <Register />
+        </Route>
+
+        {/* Explore */}
+
+        {/* Data Pasien */}
+        <Route exact path="/tambah-data-pasien">
+          <DataPasien />
+        </Route>
+
+        {/* Data Asuransi */}
+        <Route exact path="/tambah-data-asuransi">
+          <DataAsuransi />
         </Route>
         
 
