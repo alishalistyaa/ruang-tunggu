@@ -1,0 +1,29 @@
+{
+    "pasien" : [
+        {
+            "Nama": "Alisha Listya Wardhani",
+            "NIK": "003000219374",
+            "Tanggal Lahir": "22 Maret 2003",
+            "Alamat": "Jl. Bojongsoang No.3",
+            "RT": "010",
+            "RW": "009",
+            "Kode Pos": 40287,
+            "Kota/Kabupaten": "Kab. Bandung",
+            "Provinsi": "Jawa Barat",
+            "Golongan Darah": "A"
+        },
+
+        {
+            "Nama": "Karina Rahadiani",
+            "NIK": "678500955689",
+            "Tanggal Lahir": "14 Januari 2003",
+            "Alamat": "Jl. Buah Batu No.6",
+            "RT": "004",
+            "RW": "004",
+            "Kode Pos": 40268,
+            "Kota/Kabupaten": "Kab. Bandung",
+            "Provinsi": "Jawa Barat",
+            "Golongan Darah": "O"
+        }
+    ]
+}

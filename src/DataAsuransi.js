@@ -43,7 +43,7 @@ const DataAsuransi = () => {
         </div>
 
         <div class="tombol-selesai">
-            <button onclick="window.location.href='./04-asuransi.html'" type="button" class="login-button">
+            <button onclick="window.location.href='./04-asuransi.html'" type="button" class="data-button">
                 <span class="button__text"> Selesai!</span>
             </button>
         </div>

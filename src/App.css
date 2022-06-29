@@ -105,6 +105,7 @@ a.button {
     color: var(--dark-yellow-color)
 }
 
+
 /* LOGIN */
 .login-box{
     position: absolute;
@@ -130,6 +131,13 @@ a.button {
     width: 100%;
     font-size: 20px;
     color: var(--gray-color);
+}
+
+.text-danger {
+    font-size: 11px;
+    font-family: Jeko;
+    color: var(--light-purple-color);
+    padding: 0 0 0 14px;
 }
 
 ::placeholder{
@@ -189,6 +197,7 @@ a.button {
     display: inline-flex;
     padding: 10px 10px 5px 10px
 }
+
 .button__icon {
     margin-left: 8px;
 }
@@ -315,7 +324,7 @@ body {
     width: 150px
 }
 
-.login-button {
+.data-button {
     position: relative;
     width: 60%;
     max-width: 500px;
@@ -341,7 +350,7 @@ body {
     margin-left: 8px;
 }
 
-.login-button:hover {
+.data-button:hover {
     background-color: var(--dark-yellow-color);
     color: var(--gray-color);
 }

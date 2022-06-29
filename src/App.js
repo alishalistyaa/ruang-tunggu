@@ -9,6 +9,7 @@ import Login from './Login';
 import Register from './Register';
 import DataPasien from './DataPasien';
 import DataAsuransi from './DataAsuransi';
+import NoAntrian from './NoAntrian';
 
 
 function App() {
@@ -43,6 +44,11 @@ function App() {
         {/* Data Asuransi */}
         <Route exact path="/tambah-data-asuransi">
           <DataAsuransi />
+        </Route>
+
+        {/* Nomor Antrian */}
+        <Route exact path="/nomor-antrian">
+          <NoAntrian />
         </Route>
         
 

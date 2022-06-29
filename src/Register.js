@@ -2,6 +2,9 @@
 // import { LogoNodejs } from 'react-ionicons'
 import { Link } from 'react-router-dom';
 
+// Files
+import Validation from './passwordValidation/validation';
+
 
 const Register = () => {
     return ( 
@@ -11,23 +14,20 @@ const Register = () => {
         <div class="textbox">
             <input type="text" placeholder="alamat email" name="" defaultValue=""/>
         </div>
-
-        <div class="textbox">
-            <input type="password" placeholder="buat password" name="" defaultValue=""/>
-        </div>
-
-        <div class="textbox">
-            <input type="password" placeholder="konfirmasi password" name="" defaultValue=""/>
-        </div>
-
-            <Link to="/explore">
+        <Validation />
+        
+        <Link to="/explore">
             <button type="button" class="login-button">
                 <span class="button__text"> Selanjutnya</span>
                 <span class="button__icon">
-                    {/* <ion-icon name="arrow-forward-outline"></ion-icon> */}
+                    <ion-icon name="arrow-forward-outline"></ion-icon>
                 </span>
             </button>
             </Link>
+
+        
+
+            
     </div>
     
      );
