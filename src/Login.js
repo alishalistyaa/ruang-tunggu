@@ -1,6 +1,7 @@
 // Needs
-import { LogoNodejs } from 'react-ionicons'
-import Icon from 'react-native-ionicons';
+// import { LogoNodejs } from 'react-ionicons'
+// import Icon from 'react-native-ionicons';
+import { Link } from 'react-router-dom';
 
 // Files
 
@@ -20,7 +21,7 @@ const Login = () => {
         <button onclick="window.location.href='./01-explore.html'" type="button" class="login-button">
             <span class="button__text"> Selanjutnya</span>
             <span class="button__icon">
-                <Icon name="arrow-forward-outline"/>
+                {/* <Icon name="arrow-forward-outline"/> */}
             </span>
         </button>
 

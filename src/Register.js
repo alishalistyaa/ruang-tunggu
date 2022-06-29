@@ -1,5 +1,6 @@
 //Needs
-import { LogoNodejs } from 'react-ionicons'
+// import { LogoNodejs } from 'react-ionicons'
+import { Link } from 'react-router-dom';
 
 
 const Register = () => {
@@ -18,12 +19,15 @@ const Register = () => {
         <div class="textbox">
             <input type="password" placeholder="konfirmasi password" name="" value=""/>
         </div>
-            <button onclick="window.location.href='./01-explore.html'" type="button" class="login-button">
+
+            <Link to="/explore">
+            <button type="button" class="login-button">
                 <span class="button__text"> Selanjutnya</span>
                 <span class="button__icon">
-                    <ion-icon name="arrow-forward-outline"></ion-icon>
+                    {/* <ion-icon name="arrow-forward-outline"></ion-icon> */}
                 </span>
             </button>
+            </Link>
     </div>
     
      );
