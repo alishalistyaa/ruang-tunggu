@@ -197,3 +197,151 @@ a.button {
     background-color: var(--dark-yellow-color);
     color: var(--gray-color);
 }
+
+
+
+
+
+
+/* DATA BARU */
+
+/* DATA BARU */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Allrounder-medium, sans-serif;
+    font-size: 16px;
+    background: url(images/tambah-data-background.png) no-repeat;
+    background-size: cover;}
+
+.data-box {
+    position: absolute;
+    width: 100%;
+    height: 90%;
+    left: 45px;
+    top: 117px;
+
+    font-family: Jeko;
+    color: var(--dark-gray-color);
+}
+
+.data-textbox {
+    margin: 5px;
+}
+
+.data-textbox label {
+    position: relative;
+    font-family: Jeko;
+    font-size: 14px;
+    left: 11px;
+}
+
+.data-textbox input {
+    box-sizing: border-box;
+    border: 2px solid var(--dark-purple-color);
+    border-radius: 20px;
+
+    width: 60%;
+    max-width: 500px;
+    height: 37%;
+    margin: 3px;
+    padding: 3px 0 3px 20px;
+    background: none;
+
+    font-family: Allrounder-medium;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 140%;
+    color: var(--dark-gray-color);
+}
+
+::placeholder{
+    font-family: Allrounder-medium;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 140%;
+    /* identical to box height, or 17px */
+    
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.2px;
+    
+    color: #58585B;
+    
+    opacity: 0.2; 
+}
+
+#list-textbox1 {
+    list-style-type: none;
+    display: inline;
+    margin: 0, 30px, 10px, 0;
+}
+
+#RTRW {
+    float: left;
+    margin: 19.5px 8px 0 0;
+}
+
+
+#RT {
+    width: 53px;
+    padding: 3px 10px 3px 10px;
+}
+
+#RW {
+    width: 53px;
+    padding: 3px 10px 3px 10px;
+}
+
+#Kode-Pos {
+    width: 160px;
+    padding: 3px 10px 3px 10px;
+}
+
+#list-textbox2 {
+    list-style-type: none;
+    display: inline;
+    margin: 40px, 30px, 10px, 0;
+}
+
+#Kota {
+    width: 126px;
+}
+
+#Provinsi {
+    width: 150px
+}
+
+.login-button {
+    position: relative;
+    width: 60%;
+    max-width: 500px;
+    height: 30%;
+    left: 0%;
+    top: 100%;
+
+    border: none;
+    outline: none;
+    background: var(--yellow-color);
+    font-family: Jeko;
+    color: var(--while-color);
+    font-size: 18px;
+
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 36px;
+    margin-top: 55px;
+
+    display: inline-flex;
+    padding: 10px 10px 5px 25%
+}
+.button__icon {
+    margin-left: 8px;
+}
+
+.login-button:hover {
+    background-color: var(--dark-yellow-color);
+    color: var(--gray-color);
+}
