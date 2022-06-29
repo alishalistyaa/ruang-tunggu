@@ -1,14 +1,15 @@
 import logo from "./images/logo-RT-with-text.svg"
+import homeicon from "./images/home-icon.svg";
 
-const landingpage = () => {
+const Landingpage = () => {
     return ( 
-        <div className="landingpage">
+        <div className="Landingpage">
         <img src={logo} id="logo-landingpage" alt="Logo RuangTunggu"/>
-        <link to ="./00.1-login-register.html" class="button">
-            <img src={require('./images/home-icon.svg')}/>
-        </link>
+        {/* <Link to = "./00.1-login-register.html" class="button">
+            <img src={homeicon}/>
+        </Link> */}
         </div>
      );
 }
  
-export default landingpage;
+export default Landingpage;

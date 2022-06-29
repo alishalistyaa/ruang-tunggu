@@ -1,11 +1,20 @@
 import './App.css';
-import landingpage from './landingpage';
+import Landingpage from './Landingpage';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 function App() {
   return (
-    <div className = "App">
-      < landingpage />
-    </div>
+    <Router>
+      <div className = "App">
+      <Switch>
+        <Route path="/">
+          <Landingpage />
+        </Route>
+        
+      </Switch>
+      </div>
+    </Router>
+     
     
   );
 }

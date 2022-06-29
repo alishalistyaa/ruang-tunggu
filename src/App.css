@@ -1,0 +1,44 @@
+/* DEFAULT */
+
+:root {
+    --dark-purple-color: #4b4fc4;
+    --light-purple-color: #6668cb;
+    --while-color: #FDFEFF;
+    --yellow-color: #f1d066;
+    --gray-color: #a2a3B0;
+    --dark-gray-color: #58585B;
+}
+
+/* Fonts */
+@font-face {
+    font-family: Jeko;
+    src: url(fonts/FontsFree-Net-Jeko-Variable.ttf);
+}
+@font-face {
+    font-family: Allrounder-regular;
+    src: url(fonts/Allrounder-Regular.otf);
+}
+@font-face {
+    font-family: Allrounder-book;
+    src: url(fonts/Allrounder-Book.otf);
+}
+@font-face {
+    font-family: Allrounder-medium;
+    src: url(fonts/Allrounder-Medium.otf);
+}
+
+/* LANDING PAGE */
+
+#logo-landingpage {
+    /* Background */
+    position: fixed;
+    width: 220px;
+    height: 320px;
+    
+    top: 30%;
+    left: 50%;
+    margin-top: -50px;
+    margin-left: -100px;
+
+}
+
