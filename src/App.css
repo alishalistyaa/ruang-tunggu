@@ -4,7 +4,8 @@
     --dark-purple-color: #4b4fc4;
     --light-purple-color: #6668cb;
     --while-color: #FDFEFF;
-    --yellow-color: #f1d066;
+    --dark-yellow-color: #f1d066;
+    --yellow-color: #FFD84B;
     --gray-color: #a2a3B0;
     --dark-gray-color: #58585B;
 }
@@ -42,3 +43,157 @@
 
 }
 
+a.button {
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+
+    position: absolute;
+    left: 17%;
+    top: 82%;
+
+    border: 1px solid var(--dark-purple-color);
+    background: var(--dark-purple-color);
+    border-radius: 36px;
+
+    text-decoration: none;
+    color: initial;
+
+    padding: 4% 30% 4% 30%;
+}
+
+/* REGISTER AND LOGIN */
+    .login-register {
+        margin: 0;
+        padding: 0;
+        font-family: Allrounder-medium, sans-serif;
+        background: url(images/Login-Background.png) no-repeat;
+        background-size: cover;
+    }
+
+    .pilihan-box{
+        position: absolute;
+        width: 50%;
+        height: 50%;
+        left: 20%;
+        top: 40%;
+    }
+    
+    #pemisah-atau {
+        position: relative;
+        width: 244px;
+        height: 9px;
+        padding: 20px 20px 10px 2px;
+    }
+
+    .pilihan-button{
+    box-sizing: border-box;
+    background: none;
+    position: relative;
+    width: 245px;
+    height: 49px;
+
+    border: 2px solid var(--dark-purple-color);
+    border-radius: 13px;
+    
+    font-family: Jeko;
+    color: var(--dark-purple-color);
+}
+
+.pilihan-button:hover {
+    border: 2px solid var(--dark-yellow-color);
+    color: var(--dark-yellow-color)
+}
+
+/* LOGIN */
+.login-box{
+    position: absolute;
+    width: 250px;
+    height: 271px;
+    left: 70px;
+    top: 30%;
+    float: left;
+}
+
+.login-box h1{
+    font-family: Jeko;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+
+    color: var(--dark-gray-color);
+    line-height: 140%;
+    letter-spacing: 0.2px;
+}
+
+.textbox{
+    width: 100%;
+    font-size: 20px;
+    color: var(--gray-color);
+}
+
+::placeholder{
+    font-family: Allrounder-medium;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 140%;
+    /* identical to box height, or 17px */
+    
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.2px;
+    
+    color: #58585B;
+    
+    opacity: 0.2; 
+}
+
+.textbox input{
+    border: 1px solid var(--dark-gray-color);
+    border-radius: 14px;
+    width: 250px;
+    height: 38px;
+    left: 70px;
+    top: 373px;
+
+    outline: var(--dark-purple-color);
+
+    background: none;
+    font-family: Allrounder-medium;
+    font-size: 14px;
+    color: var(--dark-gray-color);
+
+    float: left;
+    margin: 6px;
+    padding: 3px 0 3px 20px;
+}
+
+.login-button {
+    position: absolute;
+    width: 118px;
+    height: 33px;
+    left: 65%;
+    top: 100%;
+
+    border: none;
+    outline: none;
+    background: var(--yellow-color);
+    font-family: Jeko;
+    color: var(--while-color);
+
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    margin-top: 55px;
+
+    display: inline-flex;
+    padding: 10px 10px 5px 10px
+}
+.button__icon {
+    margin-left: 8px;
+}
+
+.login-button:hover {
+    background-color: var(--dark-yellow-color);
+    color: var(--gray-color);
+}
