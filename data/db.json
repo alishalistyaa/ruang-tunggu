@@ -31,7 +31,8 @@
             "Kode Pos": 40287,
             "Kota/Kabupaten": "Kab. Bandung",
             "Provinsi": "Jawa Barat",
-            "Golongan Darah": "A"
+            "Golongan Darah": "A",
+            "id":1
         },
 
         {
@@ -44,7 +45,20 @@
             "Kode Pos": 40268,
             "Kota/Kabupaten": "Kab. Bandung",
             "Provinsi": "Jawa Barat",
-            "Golongan Darah": "O"
+            "Golongan Darah": "O",
+            "id": 2
+        }
+    ],
+
+    "asuransi" : [
+        {
+            "NamaAsuransi": "BPJS", 
+            "NoAsuransi": "0022128282234",
+            "NamaPemilik": "Alisha Listya", 
+            "TLAsuransi": "22 Maret 2003", 
+            "AlamatAsuransi": "Jalan Bojongsoang nO. 3", 
+            "KotaAsuransi": "Kota Bandung", 
+            "ProvinsiAsuransi": "Jawa Barat"
         }
     ]
 }

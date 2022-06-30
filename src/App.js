@@ -10,6 +10,7 @@ import Register from './Register';
 import DataPasien from './DataPasien';
 import DataAsuransi from './DataAsuransi';
 import NoAntrian from './NoAntrian';
+import Pasien from './Pasien';
 
 
 function App() {
@@ -37,6 +38,10 @@ function App() {
         {/* Explore */}
 
         {/* Data Pasien */}
+        <Route exact path="/pasien">
+          <Pasien />
+        </Route>
+
         <Route exact path="/tambah-data-pasien">
           <DataPasien />
         </Route>
