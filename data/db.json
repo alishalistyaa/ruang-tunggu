@@ -1,64 +1,64 @@
 {
-    "user" : [
-        {
-            "email": "alisha.listya@gmail.com",
-            "password": "alisha22"
-        },
-
-        {
-            "email": "karinarahadiani@gmail.com",
-            "password": "karinaaa2020"
-        },
-
-        {
-            "email": "nuhayahya@gmail.com",
-            "password": "nuhayahya0005"
-        },
-
-        {
-            "email": "filbertfelim@gmail.com",
-            "password": "filbert1190"
-        }],
-        
-    "pasien" : [
-        {
-            "Nama": "Alisha Listya Wardhani",
-            "NIK": "003000219374",
-            "Tanggal Lahir": "22 Maret 2003",
-            "Alamat": "Jl. Bojongsoang No.3",
-            "RT": "010",
-            "RW": "009",
-            "Kode Pos": 40287,
-            "Kota/Kabupaten": "Kab. Bandung",
-            "Provinsi": "Jawa Barat",
-            "Golongan Darah": "A",
-            "id":1
-        },
-
-        {
-            "Nama": "Karina Rahadiani",
-            "NIK": "678500955689",
-            "Tanggal Lahir": "14 Januari 2003",
-            "Alamat": "Jl. Buah Batu No.6",
-            "RT": "004",
-            "RW": "004",
-            "Kode Pos": 40268,
-            "Kota/Kabupaten": "Kab. Bandung",
-            "Provinsi": "Jawa Barat",
-            "Golongan Darah": "O",
-            "id": 2
-        }
-    ],
-
-    "asuransi" : [
-        {
-            "NamaAsuransi": "BPJS", 
-            "NoAsuransi": "0022128282234",
-            "NamaPemilik": "Alisha Listya", 
-            "TLAsuransi": "22 Maret 2003", 
-            "AlamatAsuransi": "Jalan Bojongsoang nO. 3", 
-            "KotaAsuransi": "Kota Bandung", 
-            "ProvinsiAsuransi": "Jawa Barat"
-        }
-    ]
+  "user": [
+    {
+      "email": "alisha.listya@gmail.com",
+      "password": "alisha22",
+      "id": 1
+    },
+    {
+      "email": "karinarahadiani@gmail.com",
+      "password": "karinaaa2020",
+      "id": 2
+    },
+    {
+      "email": "nuhayahya@gmail.com",
+      "password": "nuhayahya0005",
+      "id": 3
+    },
+    {
+      "email": "filbertfelim@gmail.com",
+      "password": "filbert1190",
+      "id": 4
+    }
+  ],
+  "pasien": [
+    {
+      "Nama": "Alisha Listya Wardhani",
+      "NIK": "003000219374",
+      "TL": "22 Maret 2003",
+      "Alamat": "Jl. Bojongsoang No.3",
+      "RT": "010",
+      "RW": "009",
+      "Kode Pos": 40287,
+      "Kota/Kabupaten": "Kab. Bandung",
+      "Provinsi": "Jawa Barat",
+      "Golongan Darah": "A",
+      "id": 1
+    },
+    {
+      "Nama": "Karina Rahadiani",
+      "NIK": "678500955689",
+      "TL": "14 Januari 2003",
+      "Alamat": "Jl. Buah Batu No.6",
+      "RT": "004",
+      "RW": "004",
+      "Kode Pos": 40268,
+      "Kota/Kabupaten": "Kab. Bandung",
+      "Provinsi": "Jawa Barat",
+      "Golongan Darah": "O",
+      "id": 2
+    }
+  ],
+  "asuransi": [
+    {
+      "NamaAsuransi": "BPJS",
+      "NoAsuransi": "0022128282234",
+      "NamaPemilik": "Alisha Listya",
+      "TLAsuransi": "22 Maret 2003",
+      "AlamatAsuransi": "Jalan Bojongsoang nO. 3",
+      "KotaAsuransi": "Kota Bandung",
+      "ProvinsiAsuransi": "Jawa Barat",
+      "id": 1
+    }
+  ]
 }

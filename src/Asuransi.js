@@ -3,14 +3,13 @@ import { Link } from 'react-router-dom';
 import useFetch from './useFetch';
 
 // Files
-import Pasien_block from './Pasien_block';
+import Asuransi_block from './Asuransi_block';
 
-const Pasien = () => {
-    const {data, isPending, Error } = useFetch('http://localhost:8000/pasien');
-
+const Asuransi = () => {
+    const {data, isPending, Error } = useFetch('http://localhost:8000/asuransi');
     return ( 
-        <div className="pasien">
-            <Link to ="/appointment"> Back </Link>
+        <div className="asuransi">
+            <Link to ="/pasien"> Back </Link>
 
             <div className="progressBar">
                 <p> Progress Bar</p>
@@ -18,18 +17,18 @@ const Pasien = () => {
             </div>
 
             <div className="topHook">
-                <h2> Siapa yang akan diperiksa?</h2>
+                <h2> Pilih Asuransi yang Kamu Inginkan!</h2>
             </div>
 
-            <div className="pilih-pasien">
-                <Pasien_block dataPasien = {data}/>
+            <div className="pilih-asuransi">
+                <Asuransi_block dataAsuransi ={data}/>
             </div>
 
-            <div className="tambah-data">
-                <Link to="/tambah-data-pasien"> Tambah Data Pasien</Link>
+            <div className="tambah-data-asuransi">
+                <Link to="/tambah-data-asuransi"> Tambah Data Asuransi </Link>
             </div>
 
-            <Link to = "/asuransi">
+            <Link to = "/pembayaran">
                 <button type="button" class="next-button">
                     <span class="button__text"> Selanjutnya</span>
                     <span class="button__icon">
@@ -37,9 +36,10 @@ const Pasien = () => {
                     </span>
                 </button>
             </Link>
+            
 
         </div>
      );
 }
  
-export default Pasien;
+export default Asuransi;

@@ -207,9 +207,48 @@ a.button {
     color: var(--gray-color);
 }
 
+/* PROGRESS BAR */
+.topHook {
+    font-family: Jeko;
+    color: var(--dark-gray-color);
+}
 
+/* SIAPA YANG AKAN DIPERIKSA */
+.pasien-button {
+    width: 300px;
+    height: 140px;
+    background: url(images/BackgroundButton.svg);
 
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 25px;
+    outline: none;
+    border: none;
 
+    align-items: flex-end;
+}
+
+.pasien-button:hover {
+    background-color: var(--dark-yellow-color);
+    color: var(--gray-color);
+    color: var(--gray-color);
+}
+
+.kotakPasien h2 {
+    font-family: Jeko;
+    color: var(--dark-purple-color);
+}
+
+.kotakPasien button {
+    font-family: Jeko;
+    color: var(--while-color);
+    font-size: 13px;
+    background-color: var(--yellow-color);
+    line-height: 140%;
+
+    border: none;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+}
 
 
 /* DATA BARU */

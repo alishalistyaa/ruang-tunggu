@@ -29,7 +29,7 @@ const DataAsuransi = () => {
             console.log('new asuransi data added');
             setIsPending(false);
             // history.go(-1);
-            history.push('/')
+            history.push('/asuransi')
         })
     }
 

@@ -32,7 +32,7 @@ const DataPasien = () => {
             console.log('new pasien data added');
             setIsPending(false);
             // history.go(-1);
-            history.push('/')
+            history.push('/pasien')
         })
     }
 

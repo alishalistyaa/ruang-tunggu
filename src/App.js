@@ -11,6 +11,7 @@ import DataPasien from './DataPasien';
 import DataAsuransi from './DataAsuransi';
 import NoAntrian from './NoAntrian';
 import Pasien from './Pasien';
+import Asuransi from './Asuransi';
 
 
 function App() {
@@ -47,6 +48,10 @@ function App() {
         </Route>
 
         {/* Data Asuransi */}
+        <Route exact path="/asuransi">
+          <Asuransi />
+        </Route>
+
         <Route exact path="/tambah-data-asuransi">
           <DataAsuransi />
         </Route>
