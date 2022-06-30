@@ -1,4 +1,25 @@
 {
+    "user" : [
+        {
+            "email": "alisha.listya@gmail.com",
+            "password": "alisha22"
+        },
+
+        {
+            "email": "karinarahadiani@gmail.com",
+            "password": "karinaaa2020"
+        },
+
+        {
+            "email": "nuhayahya@gmail.com",
+            "password": "nuhayahya0005"
+        },
+
+        {
+            "email": "filbertfelim@gmail.com",
+            "password": "filbert1190"
+        }],
+        
     "pasien" : [
         {
             "Nama": "Alisha Listya Wardhani",
