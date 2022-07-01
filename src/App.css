@@ -52,9 +52,7 @@
 
 }
 
-.links {
-    -webkit-appearance: button;
-    -moz-appearance: button;
+/* .links {
     appearance: button;
 
     position: absolute;
@@ -69,11 +67,11 @@
     color: initial;
 
     padding: 4% 30% 4% 30%;
-}
+} */
 
 .button-halaman-utama {
     position: absolute;
-    left: 17%;
+    left: 11%;
     top: 82%;
 
     border: 1px solid var(--dark-purple-color);
@@ -84,7 +82,8 @@
     color: var(--while-color);
     text-decoration: none;
 
-    padding: 10px 15% 10px 15%;
+    padding: 10px 100px 10px 100px;
+    margin-top: 20px;
 }
 
 /* REGISTER AND LOGIN */

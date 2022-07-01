@@ -22,7 +22,7 @@ const Landingpage = () => {
             {toggle()}
             <img src={logo} id="logo-landingpage" alt="Logo RuangTunggu"/>
             <div className="links">
-                <Link to = "/login-register" className='button'>
+                <Link to = "/login-register" className='button-halaman-utama'>
                 <img src={homeicon}/>
                 </Link>
             </div>
