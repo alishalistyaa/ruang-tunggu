@@ -17,10 +17,10 @@ const Asuransi = () => {
 
             <div className="progressBar">
                 <div className="bar-nya-beneran">
-                    <img id='bar-component'src={progress}/>
                     <img id='bar-component'src={progressBar}/>
+                    <img id='bar-component'src={progress}/>
                 </div>
-                <h3>25%</h3>
+                <h3>50%</h3>
             </div>
 
             <div className="topHook">

@@ -10,6 +10,7 @@
     --dark-gray-color: #58585B;
 
     --backgroundbener: none;
+    --backgroundcolor: var(--while-color);
 
     --background-login: url(images/bg-login.svg);
     --background-tambah-data: url(images/bg-tambah-data.svg);
@@ -337,9 +338,9 @@ a.button {
 .pasien-button {
     min-width: 300px;
     min-height: 140px;
-    background: url(images/BackgroundButton.svg) no-repeat;
     background-size: cover;
-    
+    background: url(images/BackgroundButton.svg) no-repeat;
+    background-color: #EAECFF;
 
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
     border-radius: 25px;
@@ -348,12 +349,13 @@ a.button {
 
     padding: 10px 10px 10px 10px;
     align-items: flex-end;
+    margin: 10px 0 10px 0;
 }
+
 
 .pasien-button:hover {
     
-    background-color: var(--dark-yellow-color);
-    color: var(--gray-color);
+    border: 1px solid var(--yellow-color);
     color: var(--gray-color);
 }
 
@@ -429,7 +431,7 @@ a.button {
 
 .asuransi-block{
     max-width: 220px;
-    display: inline;
+    display: flex;
 }
 
 /* PEMBAYARAN */
@@ -467,7 +469,9 @@ a.button {
     display: inline;
 }
 .tambah-data-asuransi {
+    display: flex;
     max-width: 210px;
+   
 }
 
 .tambah-data-asuransi img {
@@ -480,7 +484,7 @@ a.button {
 .asuransi-button {
     max-width: 302px;
     min-height: 140px;
-    display: inline;
+    display: flex;
     background-color: var(--while-color);
     border: 1px solid var(--dark-purple-color);
     border-radius: 20px;
@@ -497,13 +501,13 @@ a.button {
 .asuransi-textbox h3 {
     font-family: Allrounder-medium;
     color: var(--dark-gray-color);
-    font-size: 17px;
+    font-size: 13px;
 }
 
 .asuransi-textbox h2 {
     font-family: Jeko;
     color: var(--dark-purple-color);
-    font-size: 25px;
+    font-size: 19px;
 }
 
 .kotakAsuransi button {
@@ -527,9 +531,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: Allrounder-medium, sans-serif;
-    font-size: 16px;
-    background-image: url(images/bg-login.svg) no-repeat;
-    background-size: cover;}
+    font-size: 16px;}
 
 .login-register{
     background: var(--background-login) no-repeat; 
@@ -695,4 +697,367 @@ body {
 .data-button:hover {
     background-color: var(--dark-yellow-color);
     color: var(--gray-color);
+}
+
+/* APPOINTMENT */
+
+.lebih-background {
+    position: absolute;
+    right:0;
+    z-index: -1;
+    min-width: 100%;
+    min-height: 100%;
+}
+.background {
+    position: relative;
+}
+
+.elips-1 {
+    position: absolute;
+    right:0;
+    z-index: -1;
+}
+
+.elips-2 {
+    position: absolute;
+    top:125px;
+    left:0;
+    z-index: -1;
+}
+
+.rectangle {
+    position: absolute;
+    min-width: 100%;
+    top: 355px;
+    z-index: -1;
+}
+
+#back-button {
+    position: absolute;
+    left:15px;
+    top:30px;
+}
+
+.foto-dokter {
+    margin-top: 50px;
+    
+}
+
+.nama-dokter {
+    font-family: Jeko;
+    color: white;
+    margin-top: 15px;
+    margin-bottom: 0;
+}
+
+.jenis-dokter {
+    font-family: Allrounder-book;
+    color: white;
+}
+
+.main-container {
+    padding: 5% 0;
+    color: white;
+}
+
+.col {
+    padding: auto;
+}
+
+.container {
+    padding: auto;
+}
+
+.row {
+    padding: auto;
+}
+
+h1 {
+    font-family: Jeko;
+}
+
+h6 {
+    font-size: smaller;
+    font-family: Allrounder-book;
+}
+
+.date-section {
+    padding-top: 30px;
+    padding-left: 25px;
+}
+
+.tanggal {
+    display: inline-block;
+    font-family: Jeko;
+    color:#58585B;
+}
+
+#myForm {
+    display: inline-block;
+    padding-left: 150px;
+}
+
+#select-date {
+    border-radius: 100px;
+    border: 0;
+    background-color: #f8f8ff;
+}
+
+.row-date {
+    display: flex;
+    overflow-x: auto;
+    -ms-overflow-style: none; /* Hide the scrollbar for MS Edge */
+    scrollbar-width: none; /* Hide the scrollbar for Mozilla Firefox */
+
+    width: 100%;
+    height: fit-content;
+    
+    border: 0;
+    
+  }
+  
+.row-date::-webkit-scrollbar {
+    display: none; /* Hide the scrollbar on Webkit based browsers (Chrome, Safari, etc) */
+    -webkit-overflow-scrolling: touch; /* On touch screens the content continues to scroll for a while after finishing the scroll gesture */
+  }
+
+.date-number {
+    margin: 0;
+    color: #58585B;
+}
+
+.button-date {
+    background-color: #f8f8ff;
+    padding: 4% 4%;
+    margin: 7.5% 1%;
+    border-radius: 10px;
+    border: 0;
+}
+
+.date-text {
+    font-family: Allrounder-book;
+    font-size: small;
+    color: #58585B;
+}
+
+.button-date:hover{
+    transition: 0.2s;
+    background-color:  #ffd74b;
+}
+
+.hour-section {
+    padding-top: 20px;
+    padding-left: 25px;
+}
+
+.waktu-text {
+    font-family: Jeko;
+    color:#58585B;
+}
+
+.hour-container {
+    padding: 0;
+    margin-right: 25px;
+}
+
+.button-hour {
+    padding: 10% 25%;
+    border-radius: 10px;
+    background-color: white;
+    color: #cdd0fe;
+    border: 1px solid #cdd0fe;
+    margin: 7.5% 1%;
+
+}
+
+.hour-text {
+    font-family: Jeko;
+    margin: 0;
+    font-size:medium;
+}
+
+.button-hour:hover {
+    transition: 0.2s;
+    color: #4b4fc4;
+    border: 1px solid #4b4fc4;
+}
+.approve-section {
+    padding-top: 50px;
+}
+.button-approve {
+    border-radius: 50px;
+    padding: 3% 25%;
+    background-color: #4b4fc4;
+}
+
+.approve-text {
+    margin: 0;
+    color: white;
+    font-family: Jeko;
+    font-size: medium;
+}
+
+/* EXPLORE */
+#offcanvasWithBackdrop {
+    background-color: var(--dark-purple-color);
+}
+
+.offcanvas-start {
+    width: 230px;
+
+}
+
+.wrapper {
+    padding: 8% 7.5% 5%;
+}
+
+#back-button {
+    margin-top: 30px;
+}
+.name {
+    color: #4b4fc4;
+}
+
+.container-fluid-explore {
+    padding: 2% 0 5%;
+}
+
+.list-group {
+    padding: 0px;
+    padding-top: 200px;
+
+}
+
+.list-group-item {
+    background-color: transparent;
+    border: 0ch;
+    border-radius: 0;
+    color: #fff;
+    cursor: pointer;
+    margin-bottom: 15px;
+    font-family: Allrounder-regular;
+    }
+
+#logout-sidebar {
+    color: var(--orange-color);
+}
+
+.explore-content-top {
+    margin: 2% 7.5% 5%;
+}
+
+.search-box {
+
+    width: 90%;
+    font-size: 15px;
+}
+
+.search-section {
+    padding-top: 5% 7.5% 0;
+}
+
+.search-bar {
+    position: relative;
+    display: flex;
+    min-width: 100px;
+    padding: 3% 0 10%;
+  }
+
+
+.search-icon {
+    position: absolute;
+    top: 23%;
+    left: 8px;
+    width: 14px;
+  }
+
+.search-box {
+    border: 1px solid #4b4fc4;
+    border-radius: 200px;
+    height: 28px;
+    width: 300px;
+    padding: 2px 23px 2px 30px;
+    font-size: 10px ;
+  }
+
+.category-section {
+   width: 100%;
+}
+.category-list {
+    display: flex;
+    overflow-x: auto;
+    -ms-overflow-style: none; /* Hide the scrollbar for MS Edge */
+    scrollbar-width: none; /* Hide the scrollbar for Mozilla Firefox */
+  
+    margin: 0 auto 0 auto;
+    width: 100%;
+    height: fit-content;
+    
+    border: 0;
+    
+  }
+  
+.category-list::-webkit-scrollbar {
+    display: none; /* Hide the scrollbar on Webkit based browsers (Chrome, Safari, etc) */
+    -webkit-overflow-scrolling: touch; /* On touch screens the content continues to scroll for a while after finishing the scroll gesture */
+  }
+
+#category-text {
+    padding-left: 7.5%;
+}
+
+.category {
+    margin: 2% 2.5% 0;
+}
+
+.infography-section {
+    margin: 5% 7.5% 5%;
+}
+
+.recommendation-section {
+    margin: 7% 0 5%;
+}
+
+#recommendation-text {
+    padding: 0 7.5% 0
+}
+
+.recommendation-list {
+    display: flex;
+    overflow-x: auto;
+    -ms-overflow-style: none; /* Hide the scrollbar for MS Edge */
+    scrollbar-width: none; /* Hide the scrollbar for Mozilla Firefox */
+  
+    margin: 0 auto 0 auto;
+    width: 100%;
+    height: fit-content;
+    
+    padding: 0, 10px 0 10px;
+    border: 0;
+    
+  }
+  
+.recommendation-list::-webkit-scrollbar {
+    display: none; /* Hide the scrollbar on Webkit based browsers (Chrome, Safari, etc) */
+    -webkit-overflow-scrolling: touch; /* On touch screens the content continues to scroll for a while after finishing the scroll gesture */
+  }
+
+.recommendation {
+    margin: 2% 2.5% 0 0;
+}
+
+/* BOTCH */
+#botch.cut {
+    margin-right: 30px;
+}
+
+.errorpage {
+    margin-top: 50px;
+    margin-left: 15px;
+}
+
+#errorpagebutton {
+   background: none;
+   border: none;
+   padding-bottom: 100px;
 }

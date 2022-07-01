@@ -6,7 +6,7 @@ import { useState } from 'react';
 import { data } from 'jquery';
 
 // Files
-
+import background from './images/bg-login.svg';
 
 const Register = () => {
     // Validation 
@@ -100,63 +100,68 @@ const Register = () => {
     
 
     return ( 
-        <div className="login-box">
-        <h1>Daftar</h1>
-        <form onSubmit={handleSubmit}>
-                <div className="textbox" id="NamaLogin">
-                    <input 
-                        type="text" 
-                        id="Nama" 
-                        placeholder="nama" 
-                        name="" 
-                        defaultValue=""
-                        value = {NamaLogin}
-                        onChange={(e)=> setNamaLogin(e.target.value)}/>
+        <div className="register">
+            <div class="background">
+                    <img src={background} class="lebih-background"/>
                 </div>
-                    
+       
+                    <div className="login-box">
+                    <h1>Daftar</h1>
+                    <form onSubmit={handleSubmit}>
+                            <div className="textbox" id="NamaLogin">
+                                <input 
+                                    type="text" 
+                                    id="Nama" 
+                                    placeholder="nama" 
+                                    name="" 
+                                    defaultValue=""
+                                    value = {NamaLogin}
+                                    onChange={(e)=> setNamaLogin(e.target.value)}/>
+                            </div>
+                                
 
-            <div class="textbox">
-                <input 
-                    type="text" 
-                    placeholder="alamat email" 
-                    name="" 
-                    defaultValue=""
-                    required
-                    value = {email}
-                    onChange={(e) => setEmail(e.target.value)}/>
-            </div>
+                        <div class="textbox">
+                            <input 
+                                type="text" 
+                                placeholder="alamat email" 
+                                name="" 
+                                defaultValue=""
+                                required
+                                value = {email}
+                                onChange={(e) => setEmail(e.target.value)}/>
+                        </div>
 
-            <div className="row">
-                <div className="col-sm-4">
-                    <div className="textbox">
-                        <input 
-                            type="password" 
-                            value={passwordInput.password}  
-                            onChange={handlePasswordChange} 
-                            onKeyUp={handleValidation} 
-                            name="password" 
-                            placeholder="buat password" 
-                            className="form-control" 
-                            required
-                            />
-                        <p className="text-danger">{passwordError}</p>
-                    </div>
+                        <div className="row">
+                            <div className="col-sm-4">
+                                <div className="textbox">
+                                    <input 
+                                        type="password" 
+                                        value={passwordInput.password}  
+                                        onChange={handlePasswordChange} 
+                                        onKeyUp={handleValidation} 
+                                        name="password" 
+                                        placeholder="buat password" 
+                                        className="form-control" 
+                                        required
+                                        />
+                                    <p className="text-danger">{passwordError}</p>
+                                </div>
 
-                    <div className="textbox">
-                        <input type="password" value={passwordInput.confirmPassword}  onChange={handlePasswordChange} onKeyUp={handleValidation} name="confirmPassword" placeholder="konfirmasi password" className="form-control" />
-                        <p className="text-danger">{confirmPasswordError}</p>
-                    </div>
+                                <div className="textbox">
+                                    <input type="password" value={passwordInput.confirmPassword}  onChange={handlePasswordChange} onKeyUp={handleValidation} name="confirmPassword" placeholder="konfirmasi password" className="form-control" />
+                                    <p className="text-danger">{confirmPasswordError}</p>
+                                </div>
 
-                    </div>
-                </div> 
-            
-            {!isPending && <button className="data-button"> Selanjutnya!</button>}
-            {isPending && <button disabled className="data-button"> Menambahkan data...</button>}
+                                </div>
+                            </div> 
+                        
+                        {!isPending && <button className="data-button"> Selanjutnya!</button>}
+                        {isPending && <button disabled className="data-button"> Menambahkan data...</button>}
 
-        </form>
+                    </form>
 
         
-
+                    </div>
             
     </div>
     

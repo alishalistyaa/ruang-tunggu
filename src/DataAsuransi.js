@@ -1,6 +1,9 @@
 // Needs
 import { useState } from "react";
 import { useHistory } from "react-router-dom";
+import background from './images/bg-tambah-data.svg';
+import { Link } from 'react-router-dom';
+import BackButton from './images/back-button-grey.svg';
 
 const DataAsuransi = () => {
     // Vars
@@ -34,8 +37,17 @@ const DataAsuransi = () => {
     }
 
     return ( 
+        <div className="data-box-asuransi">
+            <div class="background">
+        <img src={background} class="lebih-background"/>
+    </div>
         <div class="data-box">
+        <div className="judul-tambah-data">
+            <Link to ="/asuransi" > <img id='back-dari-tambah' src={BackButton}/> </Link>
+            
+
         <h1>Tambah Data Asuransi</h1>
+        </div>
 
         <form onSubmit={handleSubmit}>
             <div class="data-textbox">
@@ -108,7 +120,7 @@ const DataAsuransi = () => {
             <div class="data-textbox">
                 <ul id="list-textbox2">
                     <li id="RTRW">
-                        <label for="Kota">Kota/Kabupaten</label>
+                        <label id= "botch-cut" for="Kota">Kota/Kabupaten</label>
                         <input 
                             type="text" 
                             id="Kota" 
@@ -121,7 +133,7 @@ const DataAsuransi = () => {
                     </li>
 
                     <li id="RTRWLAST">
-                        <label for="Provinsi">Provinsi</label>
+                        <label id= "botch-cut" for="Provinsi">Provinsi</label>
                         <input 
                             type="text" 
                             id="Provinsi" 
@@ -141,6 +153,7 @@ const DataAsuransi = () => {
 
 
 
+    </div>
     </div>
      );
 }

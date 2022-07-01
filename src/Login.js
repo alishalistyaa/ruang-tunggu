@@ -5,6 +5,7 @@ import { Redirect } from 'react-router';
 import { useEffect, useState } from 'react';
 
 // Files
+import background from './images/bg-login.svg';
 
 const Login = () => {
     // States
@@ -83,8 +84,14 @@ const Login = () => {
         </div>
     )
         return ( 
-        <div className="login-form">
-            {isSubmitted ? (<Redirect to="/explore" />) : renderForm}
+            <div className="loginpagee">
+                <div class="background">
+                    <img src={background} class="lebih-background"/>
+                </div>
+            
+                <div className="login-form">
+                    {isSubmitted ? (<Redirect to="/explore" />) : renderForm}
+                </div>
         </div>
        
      );

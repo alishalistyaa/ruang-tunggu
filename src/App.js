@@ -14,6 +14,8 @@ import Pasien from './Pasien';
 import Asuransi from './Asuransi';
 import Explore from './Explore';
 import Pembayaran from './Pembayaran';
+import Appointment from './Appointment';
+import ErrorPage from './errorpage';
 
 
 function App() {
@@ -43,6 +45,11 @@ function App() {
           <Explore />
         </Route>
 
+        {/* APPOINTMENT */}
+        <Route exact path="/appointment">
+          <Appointment />
+        </Route>
+
         {/* Data Pasien */}
         <Route exact path="/pasien">
           <Pasien />
@@ -70,6 +77,11 @@ function App() {
         {/* Nomor Antrian */}
         <Route exact path="/nomor-antrian">
           <NoAntrian />
+        </Route>
+
+        {/* ERROR PAGE */}
+        <Route exact path="/404-error">
+          <ErrorPage />
         </Route>
         
 

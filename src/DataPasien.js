@@ -2,7 +2,8 @@
 import { useState } from "react";
 import { Link } from 'react-router-dom';
 import { useHistory } from "react-router-dom";
-import BackButton from './images/back-button-grey.svg'
+import BackButton from './images/back-button-grey.svg';
+import background from './images/bg-tambah-data.svg';
 
 const DataPasien = () => {
     // Vars
@@ -39,7 +40,12 @@ const DataPasien = () => {
     }
 
 
-    return ( 
+    return (
+        <div className="ini-buat-background-pasien">
+             <div class="background">
+        <img src={background} class="lebih-background"/>
+    
+        </div> 
         <div className="data-box">
             
             <div className="judul-tambah-data">
@@ -213,6 +219,7 @@ const DataPasien = () => {
             </form>
 
 
+    </div>
     </div>
      );
 }
