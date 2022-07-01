@@ -1,5 +1,6 @@
 // Import Needs
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import {BrowserView, MobileView} from 'react-device-detect';
 
 // Import JS
 import './App.css';
@@ -16,11 +17,19 @@ import Explore from './Explore';
 import Pembayaran from './Pembayaran';
 import Appointment from './Appointment';
 import ErrorPage from './errorpage';
+import errorimage from './images/404-error.png';
 
 
 function App() {
   return (
-    <Router>
+    <>
+            <BrowserView>
+                <h1>Maaf, kami baru tersedia di mobile.</h1>
+                <img src ={errorimage}/>
+
+            </BrowserView>
+            <MobileView>
+            <Router>
       <div className = "App">
       <Switch>
         {/* Landing Page */}
@@ -88,6 +97,9 @@ function App() {
       </Switch>
       </div>
     </Router>
+            </MobileView>
+        </>
+
      
     
   );

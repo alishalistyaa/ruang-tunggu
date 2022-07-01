@@ -52,7 +52,7 @@
 
 }
 
-a.button {
+.links {
     -webkit-appearance: button;
     -moz-appearance: button;
     appearance: button;
@@ -1056,8 +1056,9 @@ h6 {
     margin-left: 15px;
 }
 
-#errorpagebutton {
+.errorpagebutton {
    background: none;
    border: none;
    padding-bottom: 100px;
 }
+
