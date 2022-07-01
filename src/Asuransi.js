@@ -10,7 +10,7 @@ import progressBar from './images/progress-full-grey.svg';
 import tambahData from './images/Button tambah asuransi.svg';
 
 const Asuransi = () => {
-    const {data, isPending, Error } = useFetch('http://localhost:8000/asuransi');
+    const {data, isPending, Error } = useFetch('https://ruang-tunggu-backend.herokuapp.com/asuransi');
     return ( 
         <div className="asuransi">
             <Link to ="/pasien"> <img src={BackButton}/></Link>

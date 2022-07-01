@@ -16,7 +16,7 @@ const Login = () => {
 
     const [database, setDatabase] = useState(null);
     useEffect(() => {
-        fetch('http://localhost:8000/user')
+        fetch('https://ruang-tunggu-backend.herokuapp.com/user')
             .then(res =>{
                 return res.json();
             })

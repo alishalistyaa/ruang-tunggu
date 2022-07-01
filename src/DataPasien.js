@@ -27,7 +27,7 @@ const DataPasien = () => {
 
         setIsPending(true);
 
-        fetch('http://localhost:8000/pasien', {
+        fetch('https://ruang-tunggu-backend.herokuapp.com/pasien', {
             method: 'POST',
             headers: {"Content-Type": "application/json"},
             body: JSON.stringify(dataPasien)

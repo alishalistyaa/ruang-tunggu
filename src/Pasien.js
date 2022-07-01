@@ -10,7 +10,7 @@ import progressBar from './images/progress-full-grey.svg'
 import tambahData from './images/Button tambah pasien.svg'
 
 const Pasien = () => {
-    const {data, isPending, Error } = useFetch('http://localhost:8000/pasien');
+    const {data, isPending, Error } = useFetch('https://ruang-tunggu-backend.herokuapp.com/pasien');
 
     return ( 
         <div className="pasien">
