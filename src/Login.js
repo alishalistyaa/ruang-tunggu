@@ -5,7 +5,6 @@ import { Redirect } from 'react-router';
 import { useEffect, useState } from 'react';
 
 // Files
-import SubmitButton from "./SubmitButton"
 
 const Login = () => {
     // States
@@ -26,8 +25,8 @@ const Login = () => {
     }, []);
 
     const errors = {
-        email: "invalid email",
-        pass: "invalid password"
+        uname: "Email yang kamu masukkan salah!",
+        pass: "Password yang kamu masukkan salah!"
     }
     const handleSubmit = (event) => {
         //Prevent page reload
@@ -48,14 +47,14 @@ const Login = () => {
         }
       } else {
         // Email not found
-        setErrorMessages({ name: "email", message: errors.email });
+        setErrorMessages({ name: "uname", message: errors.uname });
       }
     };
   
     // Generate JSX code for error message
     const renderErrorMessage = (name) =>
       name === errorMessages.name && (
-        <div className="error">{errorMessages.message}</div>
+        <div className="text-danger">{errorMessages.message}</div>
       );
     
     
@@ -63,6 +62,8 @@ const Login = () => {
     // JSX Code untuk login
     const renderForm = (
         <div className="login-box">
+            <h1>Masuk</h1>
+
             <form onSubmit={handleSubmit}>
                 <div className="textbox">
                     <input type="text" placeholder="alamat email" name="uname" defaultValue="" required/>
@@ -76,24 +77,17 @@ const Login = () => {
 
                 <button type="submit" className="login-button">
                     <span className="button__text"> Selanjutnya</span>
-                    <span className="button__icon">
-                        {/* <Icon name="arrow-forward-outline"/> */}
-                    </span>
                 </button>
-                {(isSubmitted) && <SubmitButton />}
+            
             </form>
         </div>
     )
-    if(isSubmitted === true){
-        return (<Redirect to="/explore" />);
-    }else{
         return ( 
         <div className="login-form">
-            <h1>Masuk</h1>
-            {isSubmitted ? <div> User is succesfully logged in </div> : renderForm}
+            {isSubmitted ? (<Redirect to="/explore" />) : renderForm}
         </div>
        
-     );}
+     );
 }
 
 export default Login;

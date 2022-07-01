@@ -19,6 +19,36 @@
       "email": "filbertfelim@gmail.com",
       "password": "filbert1190",
       "id": 4
+    },
+    {
+      "NamaLogin": "Nayla",
+      "email": "alslsls",
+      "password": "",
+      "id": 5
+    },
+    {
+      "NamaLogin": "Nayla",
+      "email": "carindhranayla@gmail.com",
+      "password": "",
+      "id": 6
+    },
+    {
+      "NamaLogin": "Nayla",
+      "email": "carindhranayla@gmail.com",
+      "password": "",
+      "id": 7
+    },
+    {
+      "NamaLogin": "nayla",
+      "email": "nayla@gmail.com",
+      "password": "Tatakucing22!",
+      "id": 8
+    },
+    {
+      "NamaLogin": "Karina",
+      "email": "karinaaa@gmail.com",
+      "password": "Karina33!",
+      "id": 9
     }
   ],
   "pasien": [

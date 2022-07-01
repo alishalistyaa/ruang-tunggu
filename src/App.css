@@ -8,6 +8,14 @@
     --yellow-color: #FFD84B;
     --gray-color: #a2a3B0;
     --dark-gray-color: #58585B;
+
+    --backgroundbener: none;
+
+    --background-login: url(images/bg-login.svg);
+    --background-tambah-data: url(images/bg-tambah-data.svg);
+    --background-netral: none;
+    --background-asuransi: url(images/bg-asuransi.svg)
+
 }
 
 /* Fonts */
@@ -62,6 +70,22 @@ a.button {
     padding: 4% 30% 4% 30%;
 }
 
+.button-halaman-utama {
+    position: absolute;
+    left: 17%;
+    top: 82%;
+
+    border: 1px solid var(--dark-purple-color);
+    background: var(--dark-purple-color);
+    border-radius: 36px;
+
+    font-family: Jeko;
+    color: var(--while-color);
+    text-decoration: none;
+
+    padding: 10px 15% 10px 15%;
+}
+
 /* REGISTER AND LOGIN */
     .login-register {
         margin: 0;
@@ -107,6 +131,10 @@ a.button {
 
 
 /* LOGIN */
+
+#namaLogin {
+    width: 15px;
+}
 .login-box{
     position: absolute;
     width: 250px;
@@ -131,6 +159,12 @@ a.button {
     width: 100%;
     font-size: 20px;
     color: var(--gray-color);
+}
+
+.login-form {
+    font-family: Jeko;
+    color: var(--dark-gray-color);
+    
 }
 
 .text-danger {
@@ -207,35 +241,152 @@ a.button {
     color: var(--gray-color);
 }
 
+/* EXPLORE */
+
+#offcanvasWithBackdrop {
+    background-color: var(--dark-purple-color);
+}
+
+.offcanvas-start {
+    width: 270px;
+
+}
+
+.wrapper {
+    padding: 8% 0 5%;
+}
+
+#back-button {
+    margin-top: 30px;
+}
+.name {
+    color: #4b4fc4;
+}
+
+.container-fluid {
+    padding: 2% 7.5% 5%;
+}
+
+.list-group {
+    padding: 0px;
+    padding-top: 200px;
+
+}
+
+.list-group-item {
+    background-color: none;
+    border: 0ch;
+    border-radius: 0;
+    cursor: pointer;
+    margin-bottom: 15px;
+    font-family: Allrounder-regular;
+    }
+#side-bar-button {
+    background-color: none;
+    border: 0ch;
+    border-radius: 0;
+    text-decoration: none;
+    color: var(--dark-gray-color);
+    cursor: pointer;
+    margin-bottom: 15px;
+    font-family: Allrounder-regular;
+}
+
+#logout-sidebar {
+    color: var(--orange-color);
+}
+
+.explore-content {
+    padding: 0 3% 0;
+}
+
 /* PROGRESS BAR */
+.bar-nya-beneran {
+    background-color: none;
+    width: 450px;
+    height: 70px;
+}
+.bar-nya-beneran img {
+    position: absolute;
+    left: 5%;
+    max-width: 100%;
+    margin: 22px 0px 10px 20px;
+}
+
+
+.progressBar h3 {
+    font-family: Jeko;
+    color: var(--dark-gray-color);
+    padding-left: 40%;
+    padding-bottom: 30px;
+}
+
 .topHook {
     font-family: Jeko;
     color: var(--dark-gray-color);
 }
 
 /* SIAPA YANG AKAN DIPERIKSA */
+.pasien {
+    max-height: 100%;
+    max-width: 90%;
+    margin: 10% 10px 10% 10%;
+}
+
+.pasien-block {
+    
+}
+
 .pasien-button {
-    width: 300px;
-    height: 140px;
-    background: url(images/BackgroundButton.svg);
+    min-width: 300px;
+    min-height: 140px;
+    background: url(images/BackgroundButton.svg) no-repeat;
+    background-size: cover;
+    
 
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
     border-radius: 25px;
     outline: none;
     border: none;
 
+    padding: 10px 10px 10px 10px;
     align-items: flex-end;
 }
 
 .pasien-button:hover {
+    
     background-color: var(--dark-yellow-color);
     color: var(--gray-color);
     color: var(--gray-color);
 }
 
+.kotakPasien p {
+    font-family: Allrounder-medium;
+    color: var(--dark-gray-color);
+    font-size: 13px;
+    max-width: 90%;
+    align-items: flex-end;
+    text-align: left;
+}
+
 .kotakPasien h2 {
     font-family: Jeko;
     color: var(--dark-purple-color);
+    max-width: 90%;
+    text-align: left;
+}
+
+.kotakPasien h3 {
+    font-family: Jeko;
+    font-size: 15px;
+    color: var(--dark-gray-color);
+    background-color: var(--while-color);
+
+    max-width: 50%;
+    padding: 5px 10px 3px 10px;
+    margin-left: 9px;
+    border-radius: 10px;
+    display: inline;
 }
 
 .kotakPasien button {
@@ -248,20 +399,154 @@ a.button {
     border: none;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
+    padding: 2px 5px 2px 7px;
+
+    display: inline;
+    margin-left: 20%;
 }
 
+.next-button {
+    border: none;
+    outline: none;
+    background: var(--yellow-color);
+    font-family: Jeko;
+    
+    color: var(--while-color);
+
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    margin-top: 55px;
+    margin-left: 50%;
+
+    padding: 10px 10px 5px 10px;
+    text-decoration: none;
+
+}
+
+/* PILIH ASURANSI */
+.asuransi {
+    max-height: 100%;
+    max-width: 90%;
+    margin: 10% 10px 10% 9%;
+}
+
+.asuransi-block{
+    max-width: 220px;
+    display: inline;
+}
+
+/* PEMBAYARAN */
+.pembayaran {
+    max-height: 100%;
+    max-width: 90%;
+    margin: 10% 10px 10% 9%;
+}
+
+.button-bayar button {
+    background: none;
+    border: 1px solid var(--dark-purple-color);
+    border-radius: 20px;
+    margin: 16px 10px 10px 10px;
+}
+
+.button-bayar button:hover {
+    border-color: var(--dark-yellow-color);
+}
+
+/* NO ANTRIAN */
+.NoAntrian {
+    max-height: 100%;
+    max-width: 90%;
+    margin: 10% 10px 10% 9%;
+}
 
 /* DATA BARU */
+.tambah-data-pasien img {
+    margin-top: 20px;
+    max-width: 300px;
+    min-height: 140px;
+    border: 1px solid var(--dark-purple-color);
+    border-radius: 20px;
+    display: inline;
+}
+.tambah-data-asuransi {
+    max-width: 210px;
+}
+
+.tambah-data-asuransi img {
+    max-width: 210px;
+    min-height: 200px;
+    border: 1px solid var(--dark-purple-color);
+    border-radius: 20px;
+}
+
+.asuransi-button {
+    max-width: 302px;
+    min-height: 140px;
+    display: inline;
+    background-color: var(--while-color);
+    border: 1px solid var(--dark-purple-color);
+    border-radius: 20px;
+    text-align: left;
+
+    padding: 10px 10px 10px 10px;
+    margin: 10px 10px 10px 0px;
+}
+
+.asuransi-button:hover {
+    border-color: var(--yellow-color);
+}
+
+.asuransi-textbox h3 {
+    font-family: Allrounder-medium;
+    color: var(--dark-gray-color);
+    font-size: 17px;
+}
+
+.asuransi-textbox h2 {
+    font-family: Jeko;
+    color: var(--dark-purple-color);
+    font-size: 25px;
+}
+
+.kotakAsuransi button {
+    font-family: Jeko;
+    color: var(--while-color);
+    font-size: 13px;
+    background-color: var(--yellow-color);
+    line-height: 140%;
+
+    border: none;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    padding: 5px 10px 5px 10px;
+
+    display: inline;
+    margin-top: 8%;
+    margin-left: 60%;
+}
+
 body {
     margin: 0;
     padding: 0;
     font-family: Allrounder-medium, sans-serif;
     font-size: 16px;
-    background: url(images/tambah-data-background.png) no-repeat;
+    background-image: url(images/bg-login.svg) no-repeat;
     background-size: cover;}
+
+.login-register{
+    background: var(--background-login) no-repeat; 
+    background-size: cover;
+    min-width: 100%;
+    min-height: 100%;
+  }
 
 .judul-tambah-data {
     margin-left: 5px;
+}
+
+#back-dari-tambah {
+    margin-bottom: 30px;
 }
 
 .data-box {

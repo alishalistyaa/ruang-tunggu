@@ -1,6 +1,8 @@
 // Needs
 import { useState } from "react";
+import { Link } from 'react-router-dom';
 import { useHistory } from "react-router-dom";
+import BackButton from './images/back-button-grey.svg'
 
 const DataPasien = () => {
     // Vars
@@ -39,7 +41,10 @@ const DataPasien = () => {
 
     return ( 
         <div className="data-box">
-            <div className="judul-tambah-data"><h1>Tambah Data Pasien</h1></div>
+            
+            <div className="judul-tambah-data">
+            <Link to ="/pasien" > <img id='back-dari-tambah' src={BackButton}/> </Link>
+            <h1>Tambah Data Pasien</h1></div>
             
             <form onSubmit={handleSubmit}>
                 <div className="data-textbox">
@@ -51,6 +56,7 @@ const DataPasien = () => {
                         id="Nama" 
                         placeholder="Steven Makuri" 
                         name="" 
+                        required
                         defaultValue=""
                         value = {Nama}
                         onChange={(e)=> setNama(e.target.value)}/>
@@ -65,6 +71,7 @@ const DataPasien = () => {
                         id="NIK" 
                         placeholder="000000001281" 
                         name="" 
+                        required
                         defaultValue=""
                         value = {NIK}
                         onChange={(e)=> setNIK(e.target.value)}/>
@@ -79,6 +86,7 @@ const DataPasien = () => {
                         id="TL" 
                         placeholder="01/01/01" 
                         name="" 
+                        required
                         defaultValue=""
                         value = {TL}
                         onChange={(e)=> setTL(e.target.value)}/>
@@ -93,6 +101,7 @@ const DataPasien = () => {
                         id="Alamat" 
                         placeholder="Jln. Bojongsoang Raya No.3" 
                         name="" 
+                        required
                         defaultValue=""
                         value = {Alamat}
                         onChange={(e)=> setAlamat(e.target.value)}/>
@@ -109,6 +118,7 @@ const DataPasien = () => {
                                 id="RT" 
                                 placeholder="004" 
                                 name="" 
+                                required
                                 defaultValue=""
                                 value = {RT}
                                 onChange={(e)=> setRT(e.target.value)}/>
@@ -122,6 +132,7 @@ const DataPasien = () => {
                                 type="text" 
                                 id="RW" 
                                 placeholder="004" 
+                                required
                                 name="" 
                                 defaultValue=""
                                 value = {RW}
@@ -137,6 +148,7 @@ const DataPasien = () => {
                                 id="Kode-Pos" 
                                 placeholder="40267" 
                                 name="" 
+                                required
                                 defaultValue=""
                                 value = {KodePos}
                                 onChange={(e)=> setKodePos(e.target.value)}/>
@@ -155,6 +167,7 @@ const DataPasien = () => {
                                 id="Kota" 
                                 placeholder="Kab.Bandung" 
                                 name="" 
+                                required
                                 defaultValue=""
                                 value = {Kota}
                                 onChange={(e)=> setKota(e.target.value)}/>
@@ -169,6 +182,7 @@ const DataPasien = () => {
                                 id="Provinsi" 
                                 placeholder="Jawa Barat" 
                                 name="" 
+                                required
                                 defaultValue=""
                                 value = {Provinsi}
                                 onChange={(e)=> setProvinsi(e.target.value)}/>

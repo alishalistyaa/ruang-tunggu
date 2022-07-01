@@ -12,6 +12,8 @@ import DataAsuransi from './DataAsuransi';
 import NoAntrian from './NoAntrian';
 import Pasien from './Pasien';
 import Asuransi from './Asuransi';
+import Explore from './Explore';
+import Pembayaran from './Pembayaran';
 
 
 function App() {
@@ -37,6 +39,9 @@ function App() {
         </Route>
 
         {/* Explore */}
+        <Route exact path="/explore">
+          <Explore />
+        </Route>
 
         {/* Data Pasien */}
         <Route exact path="/pasien">
@@ -46,6 +51,7 @@ function App() {
         <Route exact path="/tambah-data-pasien">
           <DataPasien />
         </Route>
+        
 
         {/* Data Asuransi */}
         <Route exact path="/asuransi">
@@ -54,6 +60,11 @@ function App() {
 
         <Route exact path="/tambah-data-asuransi">
           <DataAsuransi />
+        </Route>
+
+        {/* Pembayaran */}
+        <Route exact path="/pembayaran">
+          <Pembayaran />
         </Route>
 
         {/* Nomor Antrian */}

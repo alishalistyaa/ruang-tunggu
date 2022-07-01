@@ -4,15 +4,22 @@ import useFetch from './useFetch';
 
 // Files
 import Asuransi_block from './Asuransi_block';
+import BackButton from './images/back-button-grey.svg';
+import progress from './images/progress-50.svg';
+import progressBar from './images/progress-full-grey.svg';
+import tambahData from './images/Button tambah asuransi.svg';
 
 const Asuransi = () => {
     const {data, isPending, Error } = useFetch('http://localhost:8000/asuransi');
     return ( 
         <div className="asuransi">
-            <Link to ="/pasien"> Back </Link>
+            <Link to ="/pasien"> <img src={BackButton}/></Link>
 
             <div className="progressBar">
-                <p> Progress Bar</p>
+                <div className="bar-nya-beneran">
+                    <img id='bar-component'src={progress}/>
+                    <img id='bar-component'src={progressBar}/>
+                </div>
                 <h3>25%</h3>
             </div>
 
@@ -25,7 +32,7 @@ const Asuransi = () => {
             </div>
 
             <div className="tambah-data-asuransi">
-                <Link to="/tambah-data-asuransi"> Tambah Data Asuransi </Link>
+                <Link to="/tambah-data-asuransi"> <img src={tambahData}/></Link>
             </div>
 
             <Link to = "/pembayaran">
