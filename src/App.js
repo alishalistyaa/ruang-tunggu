@@ -1,19 +1,21 @@
 // Import Needs
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import {BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import {CSSTransition, TransitionGroup } from 'react-transition-group';
 import {BrowserView, MobileView} from 'react-device-detect';
+
 
 // Import JS
 import './App.css';
-import Landingpage from './Landingpage';
-import LoginRegister from './LoginRegister';
-import Login from './Login';
-import Register from './Register';
+import Landingpage from './1-Landingpage';
+import LoginRegister from './2-LoginRegister';
+import Login from './4-Login';
+import Register from './3-Register';
 import DataPasien from './DataPasien';
 import DataAsuransi from './DataAsuransi';
 import NoAntrian from './NoAntrian';
 import Pasien from './Pasien';
 import Asuransi from './Asuransi';
-import Explore from './Explore';
+import Explore from './5-Explore';
 import Pembayaran from './Pembayaran';
 import Appointment from './Appointment';
 import ErrorPage from './errorpage';
@@ -23,14 +25,23 @@ import errorimage from './images/404-error.png';
 function App() {
   return (
     <>
+    {/* Resticted View for Mobile and Browser
             <BrowserView>
                 <h1>Maaf, kami baru tersedia di mobile.</h1>
                 <img src ={errorimage}/>
 
             </BrowserView>
-            <MobileView>
+            <MobileView> */}
             <Router>
+
       <div className = "App">
+      < Route render ={({location}) => (
+        <TransitionGroup>
+          <CSSTransition
+            key={location.key}
+            timeout={490}
+            classNames="fade">
+      
       <Switch>
         {/* Landing Page */}
         <Route exact path="/">
@@ -95,13 +106,15 @@ function App() {
         
 
       </Switch>
+      </CSSTransition>
+        </TransitionGroup>
+          )}/>
       </div>
     </Router>
-            </MobileView>
+            {/* </MobileView> */}
         </>
 
      
-    
   );
 }
 export default App;

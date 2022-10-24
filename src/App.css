@@ -37,6 +37,25 @@
     src: url(fonts/Allrounder-Medium.otf);
 }
 
+/* TRANSITION */
+.fade-appear,
+.fade-enter {
+opacity: 0;
+z-index: 1;
+}
+.fade-appear-active,
+.fade-enter.fade-enter-active {
+opacity: 1;
+transition: opacity 450ms linear 250ms;
+}
+.fade-exit {
+opacity: 1;
+}
+.fade-exit.fade-exit-active {
+opacity: 0;
+transition: opacity 150ms linear;
+}
+
 /* LANDING PAGE */
 
 #logo-landingpage {
@@ -49,31 +68,16 @@
     left: 50%;
     margin-top: -50px;
     margin-left: -100px;
-
 }
 
-/* .links {
-    appearance: button;
-
-    position: absolute;
-    left: 17%;
-    top: 82%;
-
-    border: 1px solid var(--dark-purple-color);
-    background: var(--dark-purple-color);
-    border-radius: 36px;
-
-    text-decoration: none;
-    color: initial;
-
-    padding: 4% 30% 4% 30%;
-} */
-
 .button-halaman-utama {
-    position: absolute;
-    left: 11%;
-    top: 82%;
+    position: fixed;
+    left: 25%;
+    top: 72%;
 
+    min-width: 50%;
+    width: 40%;
+    height: 45px;
     border: 1px solid var(--dark-purple-color);
     background: var(--dark-purple-color);
     border-radius: 36px;
@@ -86,6 +90,11 @@
     margin-top: 20px;
 }
 
+#button-gambar-home {
+    position: relative;
+    left: 45%;
+}
+
 /* REGISTER AND LOGIN */
     .login-register {
         margin: 0;
@@ -96,29 +105,29 @@
     }
 
     .pilihan-box{
-        position: absolute;
-        width: 50%;
-        height: 50%;
+        position: fixed;
+        width: 60%;
+        height: 40%;
         left: 20%;
-        top: 40%;
+        top: 70%;
     }
     
     #pemisah-atau {
         position: relative;
         width: 244px;
         height: 9px;
-        padding: 20px 20px 10px 2px;
+        padding: 10px 20px 10px 2px;
     }
 
     .pilihan-button{
     box-sizing: border-box;
     background: none;
     position: relative;
-    width: 245px;
+    width: 100%;
     height: 49px;
 
     border: 2px solid var(--dark-purple-color);
-    border-radius: 13px;
+    border-radius: 25px;
     
     font-family: Jeko;
     color: var(--dark-purple-color);
@@ -270,17 +279,18 @@
 .list-group {
     padding: 0px;
     padding-top: 200px;
-
+    background-color: #4b4fc4;
 }
 
 .list-group-item {
-    background-color: none;
+    background-color: var(--dark-purple-color);
     border: 0ch;
     border-radius: 0;
     cursor: pointer;
     margin-bottom: 15px;
     font-family: Allrounder-regular;
     }
+
 #side-bar-button {
     background-color: none;
     border: 0ch;
@@ -339,7 +349,7 @@
     min-height: 140px;
     background-size: cover;
     background: url(images/BackgroundButton.svg) no-repeat;
-    background-color: #EAECFF;
+    background-color: white;
 
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
     border-radius: 25px;
@@ -924,7 +934,6 @@ h6 {
 .list-group {
     padding: 0px;
     padding-top: 200px;
-
 }
 
 .list-group-item {
